@@ -13,6 +13,4 @@ class WebApi(Flask):
 
         return jsonify(condition = h.get_condition(),result = h.get_result()),443
 
-if __name__ == "__main__":
-    app = WebApi(__name__)
-    app.run()
+app = WebApi(__name__)        
